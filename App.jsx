@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './src/Screens/home';
+import { colors } from './src/constants/colors';
 
 export default function App() {
     return (
@@ -11,9 +12,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: "100%",
+    height: "100%",
+    backgroundColor: colors.color3,
+    paddingVertical: 50,
   },
 });

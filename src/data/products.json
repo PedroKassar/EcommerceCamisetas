@@ -1,13 +1,14 @@
 [
-    "Camiseta Argentina",
-    "Camiseta Brasil",
-    "Camiseta Alemania",
-    "Camiseta Italia",
-    "Camiseta Inglaterra",
-    "Camiesta Francia",
-    "Camiseta Boca",
-    "Camiseta River",
-    "Camiseta San Lorenzo",
-    "Camiseta Racing",
-    "Camiseta Independiente"
+    {"id":1, "name": "Camiseta Argentina", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//3/e/3eed29e7d352344db6169a85bf9026b9f850d61b413b1840f4d5cae31186dfa9.jpeg"},
+    {"id":2, "name": "Camiseta Brasil", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//u/n/unc-131222-4-1_y3bgmd70nx2k7hsu.jpg"},
+    {"id":3, "name": "Camiseta Alemania", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//1/a/1a0de93c98037e5ec0f69c2a626d30c62e5d63a7a0898f2f4bee93bd08c13250.jpeg"},
+    {"id":4, "name": "Camiseta Italia", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//p/4/p4914543-1_ftjofpaclkbpenmx.jpg"},
+    {"id":5, "name": "Camiseta Inglaterra", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//d/c/dca5872-1.jpg"},
+    {"id":6, "name": "Camiesta Francia", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//a/2/a299d48829ae67c8a6f870d147a3cc5d1abcdc5adb18ce83298598992072f914.jpeg"},
+    {"id":7, "name": "Camiseta Holanda", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//h/o/holland-04-home-10_5.jpg"},
+    {"id":8, "name": "Camiseta Boca", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//5/1/512f02e10ecd7479b7c1bbbdf2778b871ce499d48cabfbd76b558608a0bb967e.jpeg"},
+    {"id":9, "name": "Camiseta River", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//f/a/faa2977db839bb269bd6d44c7438b27a18a9fd8fbc32c75f845c2268bacc0e46.jpeg"},
+    {"id":10, "name": "Camiseta San Lorenzo", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//n/k/nkw995-1_5jggv0s43dggerlt.jpg"},
+    {"id":11, "name": "Camiseta Racing", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//j/2/j210224111806-1.jpg"},
+    {"id":12, "name": "Camiseta Independiente", "imageUrl": "https://www.classicfootballshirts.co.uk/cdn-cgi/image/w=1000,h=1000,fit=pad,q=100,f=webp//pub/media/catalog/product//p/4/p45111823-1_g4whrg2acgowxlci.jpg"}
 ]

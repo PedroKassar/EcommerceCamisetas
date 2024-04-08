@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View, } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 import React from 'react'
 import { colors } from '../constants/colors'
 
 const ProductItem = ({product}) => {
     return (
-        <View>
-            <Text style={styles.productCard}>{product}</Text>
+        <View style={styles.productCard}>
+            <Image source={{uri: product.imageUrl}} style={styles.image}/>
+            {/* <Text style={styles.product}>{product.name}</Text> */}
         </View>
     )
 }
@@ -14,13 +15,22 @@ export default ProductItem
 
 const styles = StyleSheet.create({
     productCard:{
-        padding: 20,
-        minWidth: 200,
-        marginVertical: 10,
-        backgroundColor: colors.color1,
-        borderRadius: 5,
-        overflow: "hidden",
-        textAlign: "center",
-        
+        width: "50%",
+        // backgroundColor: "red",
     },
+    // product:{
+    //     backgroundColor: colors.color1,
+    //     padding: 20,
+    //     margin: 10,
+    //     borderRadius: 5,
+    //     overflow: "hidden",
+    //     textAlign: "center"
+    // },
+    image:{
+        backgroundColor: colors.color1,
+        padding: 80,
+        margin: 10,
+        borderRadius: 5,
+        justifyContent: "center"
+    }
 })

@@ -7,12 +7,15 @@ import { colors } from '../constants/colors'
 
 const Home = () => {
     return (
-        <View style={styles.maxContainer}>
+        <View>
                 <Header title="home"/>
             <View style={styles.listContainer}>
                 <FlatList style={styles.productsList} showsVerticalScrollIndicator={false}
                 data={products}
                 renderItem={({item})=> <ProductItem product={item}/>}
+                keyExtractor={item => item.id.toString()}
+                numColumns={2}
+                horizontal={false}
                 />
             </View>
         </View>
@@ -22,15 +25,8 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
-    maxContainer:{
-        width: "100%",
-        height: "100%",
-        backgroundColor: colors.color3,
-        paddingVertical: 50,
-    },
     listContainer:{
         backgroundColor: colors.color2,
-        alignItems: "center",
-        height: "100%",
+        height: "90%",
     },
 })
