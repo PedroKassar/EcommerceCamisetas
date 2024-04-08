@@ -5,7 +5,7 @@ import { colors } from './src/constants/colors';
 export default function App() {
     return (
       <View style={styles.container}>
-        <Home/>
+          <Home/>
       </View>
     );
   }
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "100%",
-    backgroundColor: colors.color3,
-    paddingVertical: 50,
-  },
+    backgroundColor: colors.color4,
+    paddingTop: 50
+  }
 });
