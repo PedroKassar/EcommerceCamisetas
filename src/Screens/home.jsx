@@ -1,25 +1,37 @@
 import { StyleSheet, Text, View, FlatList, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import ProductItem from '../Components/productItem'
 import products from '../data/products.json'
 import Header from '../Components/header'
 import CarouselComponent from '../Components/carousel'
 import { colors } from '../constants/colors'
+import Footer from '../Components/footer'
 
 const Home = () => {
+
+    const [searchText, setSearchText] = useState('')
+    const [filteredData, setFilteredData] = useState(products)
+
+    const handleSearch = (text) => {
+        setSearchText(text)
+        const filteredProducts = products.filter(data => data.name.toLowerCase().includes(text.toLowerCase()))
+        setFilteredData(filteredProducts)
+    }
+
     return (
         <View style={styles.homeContainer}>
-                <Header title="home"/>
-                {/* <ScrollView style={styles.scrollContainer}> */}
-                    <CarouselComponent/>
+            <Header searchText={searchText} handleSearch={handleSearch}/>
+                <View style={styles.productsContainer}>
                     <FlatList style={styles.productsList} showsVerticalScrollIndicator={false}
-                    data={products}
-                    renderItem={({item})=> <ProductItem product={item}/>}
+                    ListHeaderComponent={<CarouselComponent/>}
+                    data={filteredData}
+                    renderItem={({item})=> <ProductItem product={item}/> }
                     keyExtractor={item => item.id.toString()}
                     numColumns={2}
                     horizontal={false}
                     />
-                {/* </ScrollView> */}
+                </View>
+            <Footer/>
         </View>
     )
 }
@@ -35,14 +47,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         overflow: "hidden",
         alignItems: "center",
-
+    },
+    productsContainer:{
+        height: "77%"
     },
     productsList:{
-        backgroundColor: colors.color1,
+        backgroundColor: colors.color2,
+        width:"90%",
         padding: 10,
     },
-    scrollContainer:{
-        paddingTop: 75,
-        
-    }
 })

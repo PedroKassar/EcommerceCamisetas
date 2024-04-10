@@ -1,15 +1,17 @@
 import { StyleSheet, Text, View, TextInput } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { colors } from '../constants/colors'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 
-
-
-const Header = ({title}) => {
+const Header = ({searchText , handleSearch}) => {
     return (
         <View style={styles.header}>
-            <TextInput style={styles.searcher}/> 
+            <TextInput style={styles.searcher}
+            placeholder='Buscar producto' 
+            value={searchText}
+            onChangeText={handleSearch}
+            /> 
             <MaterialIcons name="search" size={24} color="black" />
             <MaterialCommunityIcons name="cart-outline" size={24} color="black" />
         </View>
@@ -31,7 +33,8 @@ const styles = StyleSheet.create({
     searcher:{
         backgroundColor: colors.color0,
         height: 35,
-        padding: 100,
+        width: "60%",
+        padding: 10,
         paddingVertical: 5,
         borderRadius: 5,
     },

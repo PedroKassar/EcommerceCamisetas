@@ -6,7 +6,7 @@ const ProductItem = ({product}) => {
     return (
         <View style={styles.productCard}>
             <Image source={{uri: product.imageUrl}} style={styles.image}/>
-            {/* <Text style={styles.product}>{product.name}</Text> */}
+            <Text style={styles.product}>{product.name}</Text>
         </View>
     )
 }
@@ -16,6 +16,8 @@ export default ProductItem
 const styles = StyleSheet.create({
     productCard:{
         width: "50%",
+        padding: 10,
+        alignItems: "center",
         // backgroundColor: "red",
     },
     // product:{
